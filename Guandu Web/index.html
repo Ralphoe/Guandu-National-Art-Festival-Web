@@ -1,310 +1,415 @@
 <!DOCTYPE html>
 <html lang="zh-Hant-TW">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>花室</title>
     <!-- 載入jQuery主程式 -->
     <script src="./jquery-3.7.1.min.js"></script>
 
     <script src="./js/script.js"></script>
     <!-- icon fontawesome -->
-    <link rel="stylesheet" href="./css/fontawesome.min.css">
+    <link rel="stylesheet" href="./css/fontawesome.min.css" />
     <!-- codepen換圖輪播 -->
-    <link rel="stylesheet" href="./css/style_carousel.css">
+    <link rel="stylesheet" href="./css/style_carousel.css" />
     <!-- 自訂CSS權重最重要放最下面 -->
-    <link rel="stylesheet" href="./css/style_O.css">
-</head>
+    <link rel="stylesheet" href="./css/style_O.css" />
+  </head>
 
-<body class="scrollbox">
+  <body class="scrollbox">
     <!-- 頁首 -->
     <header id="topbar">
-        <h1 class="logo">
-
-            <a href="index.html">
-                <img src="./html5web素材/images/logo_b.svg" alt="花室logo">
-            </a>
-            <!-- 行內元素不支援寬高設定 -->
-        </h1>
-        <div class="nav_box">
-            <button class="hamburger glassmorphism">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </button>
-            <nav class="navigation ">
-                <ul class="icon">
-                    <li><a class="btn_fb" href="#"></a></li>
-                    <li><a class="btn_ig" href="#"></a></li>
-                    <li><a class="btn_ln" href="#"></a></li>
-                </ul>
-                <ul class="menu glassmorphism"> <!--#代表點擊時滑動(連結)到相應id的區塊-->
-                    <li><a href="#section-1">HOME</a></li>
-                    <li><a href="#news">NEWS</a></li>
-                    <li><a href="#services">SERVICES</a></li>
-                    <li><a href="#about">ABOUT</a></li>
-                    <li><a href="#video">VIDEO</a></li>
-                    <li><a href="#contact">CONTACT</a></li>
-                </ul>
-            </nav>
-        </div>
+      <h1 class="logo">
+        <a href="index.html">
+          <img src="./html5web素材/images/logo_b.svg" alt="花室logo" />
+        </a>
+        <!-- 行內元素不支援寬高設定 -->
+      </h1>
+      <div class="nav_box">
+        <button class="hamburger glassmorphism">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+        <nav class="navigation">
+          <ul class="icon">
+            <li><a class="btn_fb" href="https://www.facebook.com/GuanduNatureArtFest/" target="_blank"></a></li>
+            <li><a class="btn_ig" href="https://www.instagram.com/guandunatureartfest/" target="_blank"></a></li>
+            <li><a class="btn_ln" href="http://www.guandu-natureart.tw/" target="_blank"></a></li>
+          </ul>
+          <ul class="menu glassmorphism">
+            <!--#代表點擊時滑動(連結)到相應id的區塊-->
+            <li><a href="#section-1">HOME</a></li>
+            <li><a href="#news">NEWS</a></li>
+            <li><a href="#services">SERVICES</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#video">VIDEO</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <!-- 主要內容 -->
-    <main> <!---section#*6>h2-->
-        <section id="section-1">
-            <div class="content-slider">
-                <input type="radio" id="banner1" class="sec-1-input" name="banner" checked>
-                <input type="radio" id="banner2" class="sec-1-input" name="banner">
-                <input type="radio" id="banner3" class="sec-1-input" name="banner">
-                <input type="radio" id="banner4" class="sec-1-input" name="banner">
-                <input type="radio" id="banner5" class="sec-1-input" name="banner">
-                <div class="slider">
-                    <div id="top-banner-1" class="banner">
-                        <div class="banner-inner-wrapper">
-                            <h2>Art</h2>
-                            <h1>GUANDU<br>Internatilnal</h1>
-                            <div class="line"></div>
-                            <div class="learn-more-button"><a href="#section-2">Learn More</a></div>
-                        </div>
-                    </div>
-                    <div id="top-banner-2" class="banner">
-                        <div class="banner-inner-wrapper">
-                            <h2>Nature</h2>
-                            <h1>Nature Art<br>Festival</h1>
-                            <div class="line"></div>
-                            <div class="learn-more-button"><a href="#section-4">Learn More</a></div>
-                        </div>
-                    </div>
-                    <div id="top-banner-3" class="banner">
-                        <div class="banner-inner-wrapper">
-                            <h2>Ecology</h2>
-                            <h1>Environmental<br>Impact</h1>
-                            <div class="line"></div>
-                            <div class="learn-more-button"><a href="#section-6">Learn More</a></div>
-                        </div>
-                    </div>
-                    <div id="top-banner-4" class="banner">
-                        <div class="banner-inner-wrapper">
-                            <h2>Human</h2>
-                            <h1>We Grow<br>Together</h1>
-                            <div class="line"></div>
-                            <div class="learn-more-button"><a href="#main-footer">Learn More</a></div>
-                        </div>
-                    </div>
-                    <div id="top-banner-5" class="banner">
-                        <div class="banner-inner-wrapper">
-                            <h2>Symbiosis</h2>
-                            <h1>Restore<br>Our Earth</h1>
-                            <div class="line"></div>
-                            <div class="learn-more-button"><a href="#main-footer">Learn More</a></div>
-                        </div>
-                    </div>
+    <main>
+      <!---section#*6>h2-->
+      <section id="section-1">
+        <div class="content-slider">
+          <input
+            type="radio"
+            id="banner1"
+            class="sec-1-input"
+            name="banner"
+            checked
+          />
+          <input type="radio" id="banner2" class="sec-1-input" name="banner" />
+          <input type="radio" id="banner3" class="sec-1-input" name="banner" />
+          <input type="radio" id="banner4" class="sec-1-input" name="banner" />
+          <input type="radio" id="banner5" class="sec-1-input" name="banner" />
+          <div class="slider">
+            <div id="top-banner-1" class="banner">
+              <div class="banner-inner-wrapper">
+                <h2>Art</h2>
+                <h1>GUANDU<br />Internatilnal</h1>
+                <div class="line"></div>
+                <div class="learn-more-button">
+                  <a href="#section-2">Learn More</a>
                 </div>
-                <nav>
-                    <div class="controls">
-                        <label for="banner1"><span class="progressbar"><span
-                                    class="progressbar-fill"></span></span><span></span> </label>
-                        <label for="banner2"><span class="progressbar"><span
-                                    class="progressbar-fill"></span></span><span></span> </label>
-                        <label for="banner3"><span class="progressbar"><span
-                                    class="progressbar-fill"></span></span><span></span> </label>
-                        <label for="banner4"><span class="progressbar"><span
-                                    class="progressbar-fill"></span></span><span></span> </label>
-                        <label for="banner4"><span class="progressbar"><span
-                                    class="progressbar-fill"></span></span><span></span> </label>
-                    </div>
-                </nav>
+              </div>
             </div>
-        </section>
-        <section id="news">
-            <h2 class="title smoove">NEWS</h2>
-            <!-- div.list-box>article.list-item*3>a>figure+h3+p 同一層使用+號-->
-            <div class="list-box">
-                <article class="list-item smoove">
-
-                    <figure><img src="./html5web素材/images/pt_news01.jpg" alt=""></figure>
-                    <h3>The Sound Underground</h3>
-                    <p>The rose, a symbol of love and beauty, belongs to the genus Rosa. With over 300 species and
-                        thousands of cultivars, roses can be erect shrubs, climbers, or trailers. Their flowers, usually
-                        large and showy, come in colors from white to yellows and reds. Roses are primarily grown for
-                        their ornamental value, but they also have minor medicinal uses and are a rich source of Vitamin
-                        C. The sharp objects on a rose stem are technically prickles, not thorns. Despite these
-                        prickles, roses are often browsed by deer. They are also of great value to the perfume industry.
-                    </p>
-                    <a href="#"> more &gt; </a>
-                </article>
-                <article class="list-item smoove">
-
-                    <figure><img src="./html5web素材/images/pt_news02.jpg" alt=""></figure>
-                    <h3>The Lily</h3>
-                    <p>The lily, a beautiful and fragrant flower, belongs to the genus Lilium. There are about 100
-                        species, most native to the temperate northern hemisphere. Lilies are prized for their large,
-                        often fragrant, and typically six-petaled flowers. The flowers come in a range of colors
-                        including whites, yellows, oranges, pinks, reds, and purples. Lilies are commonly grown in
-                        gardens for their striking and fragrant flowers. They are also used in floral arrangements and
-                        are a popular choice for weddings. In addition, lilies have cultural and literary significance
-                        in many societies, particularly in Asia.</p>
-                    <a href="#"> more &gt; </a>
-                </article>
-                <article class="list-item smoove">
-
-                    <figure><img src="./html5web素材/images/pt_news03.jpg" alt=""></figure>
-                    <h3>The Sunflower</h3>
-                    <p>The sunflower, belonging to the genus Helianthus, is known for its large, bright yellow flowers.
-                        Native to North America, there are about 70 species of sunflowers. The plant is unique as it
-                        exhibits heliotropism, a phenomenon where the flower head turns to face the sun throughout the
-                        day. Sunflowers are cultivated for their seeds, which are used for oil production, bird feed,
-                        and human consumption. They also have significance in arts and culture.</p>
-                    <a href="#"> more &gt; </a>
-                </article>
+            <div id="top-banner-2" class="banner">
+              <div class="banner-inner-wrapper">
+                <h2>Nature</h2>
+                <h1>Nature Art<br />Festival</h1>
+                <div class="line"></div>
+                <div class="learn-more-button">
+                  <a href="#section-4">Learn More</a>
+                </div>
+              </div>
             </div>
-        </section>
-        <section id="services">
-            <h2 class="title smoove">SERVICES</h2>
-            <!-- div.list-box>div.list-item*4>a[href="#"]>h3{SERVICE TITLE}+p -->
-            <!-- 中括號[屬性]，大括號{內容} -->
-            <div class="list-box">
-                <div class="list-item svc1 smoove"> <!-- 給兩個class -->
-                    <a href="#">
-                        <h3>SERVICE TITLE</h3>
-                        <p>Lorem Cupiditate eos dolor voluptates neque obcaecati aut debitis unde recusandae mollitia
-                            alias rem nulla dolore voluptatum magni, deleniti, quasi ducimus velit ut!</p>
-                        <p class="more"> more &gt </p>
-                    </a>
+            <div id="top-banner-3" class="banner">
+              <div class="banner-inner-wrapper">
+                <h2>Ecology</h2>
+                <h1>Environmental<br />Impact</h1>
+                <div class="line"></div>
+                <div class="learn-more-button">
+                  <a href="#section-6">Learn More</a>
                 </div>
-                <div class="list-item svc2 smoove">
-                    <a href="#">
-                        <h3>SERVICE TITLE</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis illo eius repudiandae,
-                            quod voluptate quidem assumenda non sunt qui nam dicta blanditiis aspernatur officia
-                            molestias in, optio animi deserunt enim!</p>
-                        <p class="more"> more &gt </p>
-                    </a>
-                </div>
-                <div class="list-item svc3 smoove">
-                    <a href="#">
-                        <h3>SERVICE TITLE</h3>
-                        <p>Lorem Consectetur adipisicing elit. Facere ab ad nesciunt maxime non ullam autem cum eligendi
-                            nobis? Eos quisquam officiis quo debitis expedita. Sed recusandae temporibus consequuntur
-                            reiciendis.</p>
-                        <p class="more"> more &gt </p>
-                    </a>
-                </div>
-                <div class="list-item svc4 smoove">
-                    <a href="#">
-                        <h3>SERVICE TITLE</h3>
-                        <p>Lorem Adipisicing elit. Sed dolorum non, ullam quod corporis ipsa assumenda tempore magni
-                            quas? Tempore incidunt sed sunt doloribus, corporis perspiciatis impedit dolore
-                            consequuntur? Ex!</p>
-                        <p class="more"> more &gt </p>
-                    </a>
-                </div>
+              </div>
             </div>
-        </section>
-        <section id="about">
-            <div class="contain smoove">
-                <h2 class="title">ABOUT</h2>
-                <p class="scrollbox">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum adipisci nam officia
-                    dignissimos saepe minus, sint hic! Sit voluptas nulla porro libero dolores aut adipisci repellat
-                    impedit nihil, similique autem magni fugit minus ipsam cupiditate. Expedita omnis possimus
-                    necessitatibus eveniet aspernatur dignissimos nam culpa rerum reprehenderit repellendus nisi, unde
-                    eos, harum quam, similique numquam qui exercitationem! Eos quia in ipsum hic doloremque atque,
-                    corrupti quam maiores impedit. Quos ea, fugit adipisci eos dolore dolorum temporibus, dicta beatae,
-                    repellendus aliquam obcaecati quis in magni commodi! Impedit nemo nostrum iusto, excepturi dolorem
-                    voluptatum corrupti animi incidunt praesentium aut itaque similique sequi odit sint et architecto
-                    aperiam vel soluta corporis accusantium! Perferendis dolores optio earum quis autem eum doloribus
-                    dolore itaque at ullam voluptate, aperiam hic a in adipisci pariatur possimus voluptas delectus
-                    molestias? Explicabo neque aperiam, beatae repellendus ullam quam error asperiores nostrum
-                    doloribus. Consequatur consequuntur dolores nam. Illo, dignissimos molestias ipsam natus et iste,
-                    corrupti nisi harum soluta eligendi recusandae qui nihil id? Soluta animi voluptates eaque possimus
-                    culpa aliquid harum nesciunt ratione! Autem fuga dolore eum aliquam et. Laborum numquam consectetur
-                    fugiat repudiandae fugit ea ipsum, ad quo quod quaerat autem voluptates corporis aliquam laudantium
-                    natus nisi a perspiciatis. Optio, maiores iure placeat, voluptas laborum, explicabo sit libero esse
-                    laboriosam sequi architecto amet fuga tenetur consectetur ipsam ad aliquid. Vel deleniti aliquam,
-                    facilis sapiente id quidem optio cupiditate sed expedita voluptate at molestias dolor officiis.
-                    Natus fugiat cum optio, expedita nisi eligendi beatae quia minus nesciunt reprehenderit animi.
-                    Delectus, dignissimos unde perferendis laudantium necessitatibus earum eum repellat rerum modi
-                    aspernatur, optio nobis aliquam eveniet mollitia voluptatibus a esse enim hic illo magni animi
-                    libero? Consectetur dignissimos saepe architecto doloremque ad, nostrum ea deleniti quidem odit
-                    accusamus hic in quo ipsum labore numquam aliquam itaque quod ab voluptas tempore quam repellat
-                    veniam id! Cumque provident aperiam earum nisi! Dolores dolorum nesciunt porro accusamus, aliquam
-                    iure eligendi facilis culpa rerum consectetur quidem non blanditiis laudantium qui cupiditate. Sed
-                    doloribus fugit totam harum deserunt atque, porro numquam tempora, ducimus vel hic eum consequatur
-                    laborum recusandae dicta architecto. Beatae, omnis numquam quia repellat porro quaerat temporibus,
-                    animi sint laboriosam nobis libero, ex corrupti sit. Minima rem optio doloribus animi cum
-                    praesentium delectus voluptatum, itaque eos vitae beatae deserunt minus officiis at quos quasi odio
-                    totam. Velit voluptate iure id, tempore fugit cum impedit ipsam, autem, exercitationem accusantium
-                    assumenda blanditiis placeat officiis veniam cupiditate commodi? Ratione fuga, ullam aliquid error
-                    culpa rem ab cumque sed qui, iure dolor aperiam voluptates laborum et repellat tempore! Eum possimus
-                    iste deleniti esse voluptates suscipit nulla fugiat totam quam iusto sapiente hic culpa nostrum,
-                    itaque dolores distinctio. Quis incidunt reiciendis impedit non aspernatur deserunt nihil possimus
-                    praesentium ullam minus sed quaerat laborum qui provident, architecto veniam in sequi ut. Ut,
-                    itaque, sequi sed necessitatibus sunt consequatur maiores illo, dolore natus impedit dolorem
-                    laborumenim! Voluptates excepturi expedita labore earum, distinctio atque, ea omnis voluptas illo ex
-                    namimpedit aliquid repudiandae? Molestiae tempora atque, eos mollitia aperiam et distinctio nobis.
-                </p>
-            </div>
-            <!-- 偽背景影片 -->
-            <video src="./html5web素材/images/flower.mp4" autoplay muted loop playsinline></video>
-        </section>
-        <section id="video">
-            <h2 class="title">VIDEO</h2>
-            <!-- poster=>預設影像 ,controls決定是否播放或是如何播放 controls="controls" -->
-            <video src="./html5web素材/images/guandu_video.mp4" controls autoplay playsinline
-                poster="./html5web素材/images/vidoe_cover.jpg">NOT SUPPORTED</video>
-        </section>
-        <section id="contact">
-            <h2 class="title smoove">CONTACT</h2>
-            <!-- 聯絡表單 -->
-            <form action="" name="contact_form" id="contact_form" method="post" class="smoove">
-                <div>
-                    <label for="name">*姓名｜</label>
-                    <input type="text" name="name" id="name" placeholder="Alonzo Wang" required autocomplete="on"
-                        title="請輸入姓名">
-
-                    <label for="tel">*連絡電話｜</label>
-                    <input type="tel" name="tel" id="tel" placeholder="02-12345678" required autocomplete="on"
-                        title="請輸入連絡電話">
-
-                    <label for="email">*E-mail｜</label>
-                    <input type="email" name="email" id="email" placeholder="youraccount@mail.com,youraccount2@mail.com"
-                        required autocomplete="on" multiple title="請輸入電子信箱">
-
-                    <label for="message">*留下您寶貴的意見｜</label>
-                    <textarea name="message" id="message" required title="請輸入您寶貴的意見"></textarea>
-
+            <div id="top-banner-4" class="banner">
+              <div class="banner-inner-wrapper">
+                <h2>Human</h2>
+                <h1>We Grow<br />Together</h1>
+                <div class="line"></div>
+                <div class="learn-more-button">
+                  <a href="#main-footer">Learn More</a>
                 </div>
-                <button name="btn_form" id="btn_form">
-                    <span>送 出</span>
-                </button>
-            </form>
-        </section>
+              </div>
+            </div>
+            <div id="top-banner-5" class="banner">
+              <div class="banner-inner-wrapper">
+                <h2>Symbiosis</h2>
+                <h1>Restore<br />Our Earth</h1>
+                <div class="line"></div>
+                <div class="learn-more-button">
+                  <a href="#main-footer">Learn More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <nav>
+            <div class="controls">
+              <label for="banner1"
+                ><span class="progressbar"
+                  ><span class="progressbar-fill"></span></span
+                ><span></span>
+              </label>
+              <label for="banner2"
+                ><span class="progressbar"
+                  ><span class="progressbar-fill"></span></span
+                ><span></span>
+              </label>
+              <label for="banner3"
+                ><span class="progressbar"
+                  ><span class="progressbar-fill"></span></span
+                ><span></span>
+              </label>
+              <label for="banner4"
+                ><span class="progressbar"
+                  ><span class="progressbar-fill"></span></span
+                ><span></span>
+              </label>
+              <label for="banner4"
+                ><span class="progressbar"
+                  ><span class="progressbar-fill"></span></span
+                ><span></span>
+              </label>
+            </div>
+          </nav>
+        </div>
+      </section>
+      <section id="news">
+        <h2 class="title smoove">NEWS</h2>
+        <!-- div.list-box>article.list-item*3>a>figure+h3+p 同一層使用+號-->
+        <div class="list-box">
+          <article class="list-item smoove">
+            <figure>
+              <img src="./html5web素材/images/pt_news01.jpg" alt="" />
+            </figure>
+            <h3>The Sound Underground</h3>
+            <p>
+              The rose, a symbol of love and beauty, belongs to the genus Rosa.
+              With over 300 species and thousands of cultivars, roses can be
+              erect shrubs, climbers, or trailers. Their flowers, usually large
+              and showy, come in colors from white to yellows and reds. Roses
+              are primarily grown for their ornamental value, but they also have
+              minor medicinal uses and are a rich source of Vitamin C. The sharp
+              objects on a rose stem are technically prickles, not thorns.
+              Despite these prickles, roses are often browsed by deer. They are
+              also of great value to the perfume industry.
+            </p>
+            <a href="#"> more &gt; </a>
+          </article>
+          <article class="list-item smoove">
+            <figure>
+              <img src="./html5web素材/images/pt_news02.jpg" alt="" />
+            </figure>
+            <h3>The Lily</h3>
+            <p>
+              The lily, a beautiful and fragrant flower, belongs to the genus
+              Lilium. There are about 100 species, most native to the temperate
+              northern hemisphere. Lilies are prized for their large, often
+              fragrant, and typically six-petaled flowers. The flowers come in a
+              range of colors including whites, yellows, oranges, pinks, reds,
+              and purples. Lilies are commonly grown in gardens for their
+              striking and fragrant flowers. They are also used in floral
+              arrangements and are a popular choice for weddings. In addition,
+              lilies have cultural and literary significance in many societies,
+              particularly in Asia.
+            </p>
+            <a href="#"> more &gt; </a>
+          </article>
+          <article class="list-item smoove">
+            <figure>
+              <img src="./html5web素材/images/pt_news03.jpg" alt="" />
+            </figure>
+            <h3>The Sunflower</h3>
+            <p>
+              The sunflower, belonging to the genus Helianthus, is known for its
+              large, bright yellow flowers. Native to North America, there are
+              about 70 species of sunflowers. The plant is unique as it exhibits
+              heliotropism, a phenomenon where the flower head turns to face the
+              sun throughout the day. Sunflowers are cultivated for their seeds,
+              which are used for oil production, bird feed, and human
+              consumption. They also have significance in arts and culture.
+            </p>
+            <a href="#"> more &gt; </a>
+          </article>
+        </div>
+      </section>
+      <section id="services">
+        <h2 class="title smoove">SERVICES</h2>
+        <!-- div.list-box>div.list-item*4>a[href="#"]>h3{SERVICE TITLE}+p -->
+        <!-- 中括號[屬性]，大括號{內容} -->
+        <div class="list-box">
+          <div class="list-item svc1 smoove">
+            <!-- 給兩個class -->
+            <a href="#">
+              <h3>SERVICE TITLE</h3>
+              <p>
+                Lorem Cupiditate eos dolor voluptates neque obcaecati aut
+                debitis unde recusandae mollitia alias rem nulla dolore
+                voluptatum magni, deleniti, quasi ducimus velit ut!
+              </p>
+              <p class="more">more &gt</p>
+            </a>
+          </div>
+          <div class="list-item svc2 smoove">
+            <a href="#">
+              <h3>SERVICE TITLE</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perferendis illo eius repudiandae, quod voluptate quidem
+                assumenda non sunt qui nam dicta blanditiis aspernatur officia
+                molestias in, optio animi deserunt enim!
+              </p>
+              <p class="more">more &gt</p>
+            </a>
+          </div>
+          <div class="list-item svc3 smoove">
+            <a href="#">
+              <h3>SERVICE TITLE</h3>
+              <p>
+                Lorem Consectetur adipisicing elit. Facere ab ad nesciunt maxime
+                non ullam autem cum eligendi nobis? Eos quisquam officiis quo
+                debitis expedita. Sed recusandae temporibus consequuntur
+                reiciendis.
+              </p>
+              <p class="more">more &gt</p>
+            </a>
+          </div>
+          <div class="list-item svc4 smoove">
+            <a href="#">
+              <h3>SERVICE TITLE</h3>
+              <p>
+                Lorem Adipisicing elit. Sed dolorum non, ullam quod corporis
+                ipsa assumenda tempore magni quas? Tempore incidunt sed sunt
+                doloribus, corporis perspiciatis impedit dolore consequuntur?
+                Ex!
+              </p>
+              <p class="more">more &gt</p>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section id="about">
+        <div class="contain smoove">
+          <h2 class="title">ABOUT</h2>
+          <p class="scrollbox">
+            Although sounds are shapeless and formless, as you close your eyes
+            and listen intently, a field of life is created; a scene that once
+            was is regenerated. The question is, what sounds evoke the sense and
+            sentiment of wetlands among people?
+            <br />
+            Mythologies are passed down through millenniums through sounds.
+            These ancient sounds transcend space and time. They have never left
+            us. What is the mythology of wetlands? Between the saline and fresh
+            water; between cities and nature; between life and death, layers of
+            different vibrations and fusion of varying wavelengths meet on the
+            sound bridge between the mankind and nature. As artists and
+            musicians construct and deconstruct, infusing the soundscape into
+            the landscape, the result is a creation that spans across multiple
+            disciplines. A new poem is being composed in this year's Guandu
+            International Nature Art Festival; a different scape is being
+            presented. The sounds and mythologies that are uniquely for the
+            wetlands of Guandu are being created. This is a beginning; an
+            experimental exhibition; a boundless creation within bounds.
+
+            <br />
+            Between sound and place, space is being generated by the artworks
+            themselves.
+            <br />
+            Lying within the space is the sound of place.
+            <br />
+            Between sound and soundscape; between sound and nature;
+            <br />
+            between sound and artwork is void.
+            <br />
+            What kind of place would be created?
+            <br />
+            What kind of music would be engendered?
+            <br />
+            What kind of scape would be perceived?
+            <br />
+            Sound, place.
+          </p>
+        </div>
+        <!-- 偽背景影片 -->
+        <video
+          src="./html5web素材/images/flower.mp4"
+          autoplay
+          muted
+          loop
+          playsinline
+        ></video>
+      </section>
+      <section id="video">
+        <h2 class="title">VIDEO</h2>
+        <!-- poster=>預設影像 ,controls決定是否播放或是如何播放 controls="controls" -->
+        <video
+          src="./html5web素材/images/guandu_video.mp4"
+          controls
+          autoplay
+          playsinline
+          poster="./html5web素材/images/vidoe_cover.jpg"
+        >
+          NOT SUPPORTED
+        </video>
+      </section>
+      <section id="contact">
+        <h2 class="title smoove">CONTACT</h2>
+        <!-- 聯絡表單 -->
+        <form
+          action=""
+          name="contact_form"
+          id="contact_form"
+          method="post"
+          class="smoove"
+        >
+          <div>
+            <label for="name">*姓名｜</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Alonzo Wang"
+              required
+              autocomplete="on"
+              title="請輸入姓名"
+            />
+
+            <label for="tel">*連絡電話｜</label>
+            <input
+              type="tel"
+              name="tel"
+              id="tel"
+              placeholder="02-12345678"
+              required
+              autocomplete="on"
+              title="請輸入連絡電話"
+            />
+
+            <label for="email">*E-mail｜</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="youraccount@mail.com,youraccount2@mail.com"
+              required
+              autocomplete="on"
+              multiple
+              title="請輸入電子信箱"
+            />
+
+            <label for="message">*留下您寶貴的意見｜</label>
+            <textarea
+              name="message"
+              id="message"
+              required
+              title="請輸入您寶貴的意見"
+            ></textarea>
+          </div>
+          <button name="btn_form" id="btn_form">
+            <span>送 出</span>
+          </button>
+        </form>
+      </section>
     </main>
 
     <!-- 頁尾 -->
     <footer>
-        <nav>
-            <ul class="menu"> <!--#代表點擊時滑動(連結)到相應id的區塊-->
-                <li><a href="#section-1">HOME</a></li>
-                <li><a href="#news">NEWS</a></li>
-                <li><a href="#services">SERVICES</a></li>
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#video">VIDEO</a></li>
-                <li><a href="#contact">CONTACT</a></li>
-            </ul>
-            <ul class="icon">
-                <li><a class="btn_fb" href=""></a></li>
-                <li><a class="btn_ig" href=""></a></li>
-                <li><a class="btn_line" href=""></a></li>
-            </ul>
-        </nav>
-        <small>&copy;煩惱煩惱 版權所有.</small>
+      <nav>
+        <ul class="menu">
+          <!--#代表點擊時滑動(連結)到相應id的區塊-->
+          <li><a href="#section-1">HOME</a></li>
+          <li><a href="#news">NEWS</a></li>
+          <li><a href="#services">SERVICES</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#video">VIDEO</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+        <ul class="icon">
+          <li><a class="btn_fb" href="https://www.facebook.com/GuanduNatureArtFest/" target="_blank"></a></li>
+          <li><a class="btn_ig" href="https://www.instagram.com/guandunatureartfest/" target="_blank"></a></li>
+          <li><a class="btn_ln" href="http://www.guandu-natureart.tw/" target="_blank"></a></li>
+        </ul>
+      </nav>
+      <small>&copy;自學作品網站 資料來自:關渡自然公園.</small>
 
-        <!-- 置頂按鈕 -->
-        <div id="btn_goTop"><i class="fa-solid fa-arrow-up"></i></div>
+      <!-- 置頂按鈕 -->
+      <div id="btn_goTop"><i class="fa-solid fa-arrow-up"></i></div>
     </footer>
     <!-- 換圖輪播 -->
     <script src="./js/script_carousel.js"></script>
@@ -314,7 +419,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smoove/0.2.10/jquery.smoove.min.js"></script>
     <!-- 自訂的Js一定要放在最後執行 -->
     <script src="./js/script.js"></script>
-
-</body>
-
+  </body>
 </html>
