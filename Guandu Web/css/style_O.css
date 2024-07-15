@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*須設定才能抓得到中文字*/
 
-@import url("https://fonts.googleapis.com/css2?family=Alegreya&family=Grenze+Gotisch:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya&family=Grenze+Gotisch:wght@200&family=Noto+Serif+TC:wght@200..900&display=swap");
 /*Google Fonts*/
 
 @font-face {
@@ -241,8 +241,11 @@ body {
 
 #topbar .logo {
   /*用階層找class需要空一格*/
-  width: 65px;
+  width: 150px;
+  height: 130px;
   display: flex;
+  justify-content: center;
+  align-items: center;
   margin: auto 0;
 }
 
@@ -559,6 +562,7 @@ section {
 .list-item h3,
 .list-item p {
   padding: 0 20px;
+  line-height: 1.5rem;
 }
 
 .list-item h3 {
@@ -805,13 +809,17 @@ section {
 }
 
 #video video {
-  height: 100%;
+  /* height: 100%; 
+  width: 100%; */
+  height: 480px;
+  width: 854px;
   /*寬高設定100%是避免播放時縮小*/
-  /* width: 80%; 設寬度會超過100vh(放大時) */
   max-height: 70vh;
-  width: 100%;
   max-width: 70%;
   /*設定這兩點放大與縮小時才不會超出=>RWD桌機概念*/
+
+  object-fit: cover;
+  /*讓封面圖片填滿標籤 */
 }
 
 @media (max-width: 768px) {
@@ -840,14 +848,14 @@ section {
   width: 35%;
 }
 
-/*全域選擇器"*"*/
+/*全域選擇器"*"*/ 
 #contact_form div * {
   display: block;
   width: 100%;
 
-  font-family: TaipeiSansTC;
+  font-family: "Noto Serif TC", serif;
   font-size: 1rem;
-  font-weight: 200;
+  font-weight: 600;
 }
 
 #contact_form label {
@@ -919,8 +927,8 @@ section {
   width: 210px;
 
   cursor: pointer;
-  background-color: var(--major-color);
-  border: 2px solid #ffd9d9;
+  background-color: rgba(204, 214, 200, 0.8);;
+  border: 2px solid rgba(53, 87, 40, 0.4);;
 
   display: block;
   margin: 2vh auto;
@@ -934,10 +942,10 @@ section {
 
 #btn_form span {
   display: block;
-  color: #164ca7;
   font-size: 0.8rem;
   /*12px;*/
-  font-weight: bold;
+  font-family: "Noto Serif TC", serif;
+  font-weight: 700;
   /* letter-spacing: 0.7px; */
   /*字距的尺寸會在右邊長尺寸*/
   margin: 15px;
