@@ -50,3 +50,25 @@ window.onscroll = function () {
     document.getElementById("topbar").style.opacity = "1";
   }
 };
+
+//light box
+$(document).ready(function () {
+  var scrollPosition = 0;
+
+  // 當點擊縮略圖時，顯示 Lightbox 並設置圖片
+  $(".lightbox-trigger").click(function () {
+    var src = $(this).attr("src");
+    $("#lightbox-image").attr("src", src);
+    $("#lightbox").css("display", "flex").hide().fadeIn();
+    $("body").addClass("no-scroll"); // 添加 no-scroll
+    $(".navigation").css("margin-right", "10px");
+  });
+
+  // 當點擊 Lightbox 本身時，隱藏 Lightbox
+  $("#lightbox").click(function () {
+    $(this).fadeOut(function () {
+      $("body").removeClass("no-scroll");
+      $(".navigation").css("margin-right", "0");
+    });
+  });
+});

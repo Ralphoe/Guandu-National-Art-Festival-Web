@@ -6,15 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>花室</title>
     <!-- 載入jQuery主程式 -->
-    <script src="./jquery-3.7.1.min.js"></script>
-
-    <script src="./js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <!-- icon fontawesome -->
     <link rel="stylesheet" href="./css/fontawesome.min.css" />
     <!-- codepen換圖輪播 -->
     <link rel="stylesheet" href="./css/style_carousel.css" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <!-- 自訂CSS權重最重要放最下面 -->
     <link rel="stylesheet" href="./css/style_O.css" />
+    <!-- 自訂的Js一定要放在最後執行 -->
+    <script src="./js/script.js"></script>
   </head>
 
   <body class="scrollbox">
@@ -71,6 +76,10 @@
 
     <!-- 主要內容 -->
     <main>
+      <!-- Lightbox -->
+      <div class="lightbox" id="lightbox">
+        <img src="" alt="Lightbox Image" id="lightbox-image" />
+      </div>
       <!---section#*6>h2-->
       <section id="section-1">
         <div class="content-slider">
@@ -174,7 +183,11 @@
         <div class="list-box">
           <article class="list-item smoove">
             <figure>
-              <img src="./html5web素材/images/pt_news01.jpg" alt="" />
+              <img
+                src="./html5web素材/images/pt_news01.jpg"
+                alt="Image 1"
+                class="thumbnail lightbox-trigger"
+              />
             </figure>
             <h3>Resonate with Earth</h3>
             <p>
@@ -193,7 +206,11 @@
           </article>
           <article class="list-item smoove">
             <figure>
-              <img src="./html5web素材/images/pt_news02.jpg" alt="" />
+              <img
+                src="./html5web素材/images/pt_news02.jpg"
+                alt="Image 2"
+                class="thumbnail lightbox-trigger"
+              />
             </figure>
             <h3>
               No tree is untouched <br />
@@ -213,7 +230,11 @@
           </article>
           <article class="list-item smoove">
             <figure>
-              <img src="./html5web素材/images/pt_news03.jpg" alt="" />
+              <img
+                src="./html5web素材/images/pt_news03.jpg"
+                alt="Image 3"
+                class="thumbnail lightbox-trigger"
+              />
             </figure>
             <h3>Give Birth</h3>
             <p>
@@ -226,6 +247,10 @@
             </p>
             <a href="#"> more &gt; </a>
           </article>
+        </div>
+        <!-- Lightbox -->
+        <div class="lightbox" id="lightbox">
+          <img src="" alt="Lightbox Image" id="lightbox-image" />
         </div>
       </section>
       <section id="services">
@@ -486,8 +511,6 @@
     </footer>
     <!-- 換圖輪播 -->
     <script src="./js/script_carousel.js"></script>
-    <!-- jQuery來源 -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <!-- jQuery Smoove -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smoove/0.2.10/jquery.smoove.min.js"></script>
     <!-- 自訂的Js一定要放在最後執行 -->

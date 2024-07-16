@@ -225,7 +225,6 @@ body {
   display: flex;
   justify-content: space-between;
   /*主軸(水平)齊頭齊尾*/
-  padding: 10px;
   align-items: flex-start;
   /*副軸(垂直)置中*/
 
@@ -235,9 +234,8 @@ body {
   width: 100%;
   /*positon自動改變了寬度*/
   padding: 10px 40px;
-  transition: opacity .35s;
+  transition: opacity 0.35s;
 }
-
 
 #topbar .logo {
   /*用階層找class需要空一格*/
@@ -538,6 +536,42 @@ section {
   overflow: hidden;
   height: 65vh;
 }
+
+/* Lightbox styles */
+.lightbox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  /* display: flex; */
+}
+.lightbox img {
+  max-width: 90%;
+  max-height: 80%;
+  margin: auto;
+  /* display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;*/
+} 
+.thumbnail {
+  cursor: pointer;
+}
+
+/* lightbox開啟時，取消網頁滾軸 */
+.no-scroll {
+  overflow: hidden;
+  padding-right: 10px;
+}
+
 
 /*News最新消息區*/
 
@@ -848,7 +882,7 @@ section {
   width: 35%;
 }
 
-/*全域選擇器"*"*/ 
+/*全域選擇器"*"*/
 #contact_form div * {
   display: block;
   width: 100%;
@@ -927,8 +961,8 @@ section {
   width: 210px;
 
   cursor: pointer;
-  background-color: rgba(204, 214, 200, 0.8);;
-  border: 2px solid rgba(53, 87, 40, 0.4);;
+  background-color: rgba(204, 214, 200, 0.8);
+  border: 2px solid rgba(53, 87, 40, 0.4);
 
   display: block;
   margin: 2vh auto;
