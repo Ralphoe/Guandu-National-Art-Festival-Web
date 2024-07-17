@@ -72,3 +72,45 @@ $(document).ready(function () {
     });
   });
 });
+
+//light box (artist area)
+
+$(document).ready(function () {
+  var scrollPosition = 0;
+
+  // 當點擊縮略圖時，顯示 Lightbox 並設置圖片
+  $(".lightbox-trigger2").click(function (event) {
+    // 如果點擊的目標是<a>，則不處理<div>的點擊事件
+    if (["a", "p", "h3"].includes(event.target.tagName.toLowerCase())) {
+      return;
+    }
+    var bgImage = $(this).css("background-image");
+    var src = bgImage.replace(/^url\(['"](.+)['"]\)/, "$1");
+    $("#lightbox-image2").attr("src", src);
+    $("#lightbox2").css("display", "flex").hide().fadeIn();
+    $("body").addClass("no-scroll"); // 添加 no-scroll
+    $(".navigation").css("margin-right", "10px");
+  });
+
+  // 當點擊 Lightbox 本身時，隱藏 Lightbox
+  $("#lightbox2").click(function () {
+    $(this).fadeOut(function () {
+      $("body").removeClass("no-scroll");
+      $(".navigation").css("margin-right", "0");
+    });
+  });
+
+  // 設置 <a>、<p> 和 <h3> 的點擊事件
+  // $(".clickable-a").on("click", function (event) {
+  //   event.preventDefault(); // 阻止 <a> 的默認行為
+  //   alert("A clicked");
+  // });
+
+  // $("p").on("click", function (event) {
+  //   alert("P clicked");
+  // });
+
+  // $("h3").on("click", function (event) {
+  //   alert("H3 clicked");
+  // });
+});

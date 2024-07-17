@@ -239,7 +239,7 @@ body {
 
 #topbar .logo {
   /*用階層找class需要空一格*/
-  width: 150px;
+  width: 130px;
   height: 130px;
   display: flex;
   justify-content: center;
@@ -537,8 +537,14 @@ section {
   height: 65vh;
 }
 
+/* .list-item a {
+  cursor: default;
+  pointer-events: none;
+} */
+
 /* Lightbox styles */
-.lightbox {
+.lightbox,
+.lightbox2 {
   display: none;
   position: fixed;
   top: 0;
@@ -551,17 +557,13 @@ section {
   z-index: 1000;
   /* display: flex; */
 }
-.lightbox img {
+.lightbox img,
+.lightbox2 img {
   max-width: 90%;
   max-height: 80%;
   margin: auto;
-  /* display: flex;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;*/
-} 
+  object-fit: contain;
+}
 .thumbnail {
   cursor: pointer;
 }
@@ -571,7 +573,6 @@ section {
   overflow: hidden;
   padding-right: 10px;
 }
-
 
 /*News最新消息區*/
 
