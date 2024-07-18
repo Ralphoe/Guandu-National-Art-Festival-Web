@@ -110,37 +110,38 @@
   color: #e88382;
   border-color: #e88382;
   transition: 0.3s;
+  text-decoration: none;
 }
 
 /* Banner圖片以直接修改原圖亮度、曝光與飽和度製造灰階白色濾鏡的效果 */
 /* 字是白色 */
 
 #section-1 .content-slider .slider #top-banner-1 {
-  background: url("../html5web素材/images/banner_01.jpg") no-repeat center
+  background: url("../material/images/banner_01.JPG") no-repeat center
     center;
   background-size: cover;
 }
 
 #section-1 .content-slider .slider #top-banner-2 {
-  background: url("../html5web素材/images/banner_02.jpg") no-repeat center
+  background: url("../material/images/banner_02.JPG") no-repeat center
     center;
   background-size: cover;
 }
 
 #section-1 .content-slider .slider #top-banner-3 {
-  background: url("../html5web素材/images/banner_03.jpg") no-repeat center
+  background: url("../material/images/banner_03.JPG") no-repeat center
     center;
   background-size: cover;
 }
 
 #section-1 .content-slider .slider #top-banner-4 {
-  background: url("../html5web素材/images/banner_04.jpg  ") no-repeat center
+  background: url("../material/images/banner_04.JPG") no-repeat center
     center;
   background-size: cover;
 }
 
 #section-1 .content-slider .slider #top-banner-5 {
-  background: url("../html5web素材/images/banner_05.jpg  ") no-repeat center
+  background: url("../material/images/banner_05.JPG") no-repeat center
     center;
   background-size: cover;
 }
