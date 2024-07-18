@@ -61,7 +61,7 @@ $(document).ready(function () {
     $("#lightbox-image").attr("src", src);
     $("#lightbox").css("display", "flex").hide().fadeIn();
     $("body").addClass("no-scroll"); // 添加 no-scroll
-    $(".navigation").css("margin-right", "10px");
+    $(".navigation").css("margin-right", "17px");
   });
 
   // 當點擊 Lightbox 本身時，隱藏 Lightbox
@@ -89,7 +89,7 @@ $(document).ready(function () {
     $("#lightbox-image2").attr("src", src);
     $("#lightbox2").css("display", "flex").hide().fadeIn();
     $("body").addClass("no-scroll"); // 添加 no-scroll
-    $(".navigation").css("margin-right", "10px");
+    $(".navigation").css("margin-right", "17px");
   });
 
   // 當點擊 Lightbox 本身時，隱藏 Lightbox

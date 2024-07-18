@@ -201,7 +201,6 @@
       }
     }
 
-
     /* 手機版主選單動態及定位 */
     .navigation {
       display: none;
@@ -333,7 +332,7 @@ section {
 /* lightbox開啟時，取消網頁滾軸 */
 .no-scroll {
   overflow: hidden;
-  padding-right: 10px;
+  padding-right: 17px;
 }
 
 /*News最新消息區*/
@@ -352,22 +351,6 @@ section {
       /* width: 100%; 上面共用區已經設定過img width:100%; */
       object-fit: cover;
       /*contain則是維持長寬比縮小*/
-    }
-  }
-
-  .list-item {
-    h3,
-    p {
-      padding: 0 20px;
-      line-height: 1.5rem;
-    }
-
-    h3 {
-      padding-top: 10px;
-      padding-bottom: 10px;
-      font-family: LEMONMILK, sans-serif;
-      /*萬一掉字採用甚麼字體*/
-      letter-spacing: 2.5px;
     }
   }
 
@@ -427,6 +410,36 @@ section {
   }
 }
 
+// 兩區共用
+
+.list-item {
+  p {
+    padding: 0 20px;
+  }
+  h3 {
+    padding: 0 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: LEMONMILK, sans-serif;
+    /*萬一掉字採用甚麼字體*/
+    letter-spacing: 2.5px;
+  }
+}
+
+.more {
+  /* display: inline-block; */
+  /* text-align: right; */
+  color: var(--major-color);
+  margin-bottom: 10px;
+  margin-right: 5px;
+  float: right;
+  /*float預設跟內容一樣寬，不會自動整行，所以不用改display了*/
+
+  &:hover {
+    color: lightpink;
+  }
+}
+
 /*SERVICE區*/
 #services {
   background-color: var(--major-color2);
@@ -457,20 +470,6 @@ section {
       /*父元素子元素都要定義overflow: hidden;*/
       text-overflow: ellipsis;
       white-space: nowrap;
-    }
-  }
-
-  .more {
-    /* display: inline-block; */
-    /* text-align: right; */
-    color: var(--major-color);
-    margin-bottom: 10px;
-    margin-right: 5px;
-    float: right;
-    /*float預設跟內容一樣寬，不會自動整行，所以不用改display了*/
-
-    &:hover {
-      color: lightpink;
     }
   }
 
@@ -548,35 +547,36 @@ section {
     .scrollbox {
       &::-webkit-scrollbar {
         width: 10px;
-        background: #ccd6c8;
+        background: #b2dbee48;
       }
-
+    
       &::-webkit-scrollbar:horizontal {
         height: 10px;
       }
-
+    
       &::-webkit-scrollbar-button {
         width: 10px;
         height: 10px;
-        background: #555f36;
+        background: #03129736;
       }
-
+    
       &::-webkit-scrollbar-thumb {
-        background: #555f36;
-
+        background: #03129736;
+    
         &.active {
           background: #804a4a81;
         }
       }
-
+    
       &::-webkit-scrollbar-corner {
-        background: #ddd;
+        background: #4f535f63;
       }
-
+    
       &::-webkit-scrollbar-track {
-        box-shadow: inset 0 0 5px rgba(161, 168, 115, 0.503);
+        box-shadow: inset 0 0 5px rgba(161, 168, 115, 0.2);
       }
     }
+    
   }
 
   video {
@@ -601,6 +601,8 @@ section {
     }
   }
 }
+
+
 
 /*VIDEO區塊*/
 
