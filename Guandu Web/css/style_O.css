@@ -568,6 +568,23 @@ section {
   cursor: pointer;
 }
 
+/* 文字燈箱 */
+
+.light_box {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+
+
 /* lightbox開啟時，取消網頁滾軸 */
 .no-scroll {
   overflow: hidden;
@@ -768,7 +785,7 @@ section {
   z-index: 2;
   width: 65%;
   /* background-color: rgba(247, 221, 182, 0.436); */
-  background-color: rgba(204, 214, 200, 0.436);
+  background-color: rgba(145, 196, 230, 0.436);
   padding: 30px 50px;
   height: 100vh;
 }
@@ -828,7 +845,7 @@ section {
   width: 100%;
 
   /*濾鏡*/
-  filter: brightness(70%) sepia(50%) opacity(60%);
+  filter: brightness(90%) sepia(50%) opacity(70%);
 }
 
 @media (max-width: 640px) {
@@ -944,7 +961,7 @@ section {
 
 #contact_form input:focus,
 #contact_form textarea:focus {
-  outline: 3px solid rgba(247, 146, 163, 0.9);
+  outline: 3px solid rgba(36, 110, 52, 0.9);
   /* outline-offset: 15px; */
   /* Foucus框與原框間距 */
 }
