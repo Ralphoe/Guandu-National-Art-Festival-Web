@@ -260,8 +260,8 @@ section {
 .title {
   font-family: "Grenze Gotisch", serif;
   font-size: 2.5rem;
-  color: var(--deep_grey);
-  border-top: var(--deep_grey) solid 3px;
+  color: var(--dark-gb);
+  border-top: var(--dark-gb) solid 3px;
   margin-bottom: 10px;
   padding: 5px;
   /* margin-top: 10px; */
@@ -474,19 +474,19 @@ section {
   }
 
   .svc1 {
-    background: url(../material/images/pt_svc1.jpg);
+    background-image: url(../material/images/pt_svc1.jpg);
   }
 
   .svc2 {
-    background: url(../material/images/pt_svc2.jpg);
+    background-image: url(../material/images/pt_svc2.jpg);
   }
 
   .svc3 {
-    background: url(../material/images/pt_svc3.jpg);
+    background-image: url(../material/images/pt_svc3.jpg);
   }
 
   .svc4 {
-    background: url(../material/images/pt_svc4.jpg);
+    background-image: url(../material/images/pt_svc4.jpg);
   }
 
   @media (max-width: 768px) {
@@ -529,7 +529,7 @@ section {
     z-index: 2;
     width: 65%;
     /* background-color: rgba(247, 221, 182, 0.436); */
-    background-color: rgba(145, 196, 230, 0.436);
+    background-color: rgba(175, 223, 255, 0.436);
     padding: 30px 50px;
     height: 100vh;
 
@@ -547,7 +547,8 @@ section {
     .scrollbox {
       &::-webkit-scrollbar {
         width: 10px;
-        background: #b2dbee48;
+        background: var(--light-gb-5);
+        opacity: 0.2;
       }
     
       &::-webkit-scrollbar:horizontal {
@@ -557,11 +558,11 @@ section {
       &::-webkit-scrollbar-button {
         width: 10px;
         height: 10px;
-        background: #03129736;
+        background: var(--dark-gb-5);
       }
     
       &::-webkit-scrollbar-thumb {
-        background: #03129736;
+        background: var(--dark-gb-5);
     
         &.active {
           background: #804a4a81;
@@ -690,7 +691,7 @@ section {
         font-family: TaipeiSansTC;
         font-size: 1rem;
         font-weight: 200;
-        color: #957272b4;
+        color: var(--grey);
       }
     }
 
@@ -706,7 +707,7 @@ section {
 
     input:focus,
     textarea:focus {
-      outline: 3px solid rgba(36, 110, 52, 0.9);
+      outline: 3px solid var(--dark-gb);
       /* outline-offset: 15px; */
       /* Foucus框與原框間距 */
     }
@@ -721,12 +722,12 @@ section {
     /* text-decoration: none; */
     /* border-radius: 30px; */
     border-radius: calc(infinity * 0.1px);
-
-    width: 210px;
+    color: var(--dark-gb);
+    width: 30%;
 
     cursor: pointer;
-    background-color: rgba(204, 214, 200, 0.8);
-    border: 2px solid rgba(53, 87, 40, 0.4);
+    background-color: var(--light-gb-5);
+    border: 2px solid var(--dark-gb-5);
 
     display: block;
     margin: 2vh auto;
@@ -815,7 +816,7 @@ footer {
   /* height: 50px; */
   /* line-height: 50px; */
   /*垂直置中常用行高設定跟高度一樣*/
-  background-color: var(--lesser-color);
+  background-color: var(--dark-gb);
   /* text-align: center; */
   color: var(--deep_grey);
 

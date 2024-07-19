@@ -180,6 +180,13 @@ button {
   --major-color3: #ecf0f4;
   /*輔助色調*/
   --lesser-color: rgb(191, 152, 153);
+  --dark-gb: #22577a;
+  --dark-gb-5: #22577a1a;
+  --miduim-gb: #38a3a5;
+  --light-gb: #57cc99;
+  --light-gb-5: #57cc9918;
+  --green: #80ed99;
+  --light-g: #c7f9cc;
 }
 
 /*網頁常用設定*/
@@ -498,8 +505,8 @@ section {
 .title {
   font-family: "Grenze Gotisch", serif;
   font-size: 2.5rem;
-  color: var(--deep_grey);
-  border-top: var(--deep_grey) solid 3px;
+  color: var(--dark-gb);
+  border-top: var(--dark-gb) solid 3px;
   margin-bottom: 10px;
   padding: 5px;
   /* margin-top: 10px; */
@@ -712,16 +719,16 @@ section {
   white-space: nowrap;
 }
 #services .svc1 {
-  background: url(../material/images/pt_svc1.jpg);
+  background-image: url(../material/images/pt_svc1.jpg);
 }
 #services .svc2 {
-  background: url(../material/images/pt_svc2.jpg);
+  background-image: url(../material/images/pt_svc2.jpg);
 }
 #services .svc3 {
-  background: url(../material/images/pt_svc3.jpg);
+  background-image: url(../material/images/pt_svc3.jpg);
 }
 #services .svc4 {
-  background: url(../material/images/pt_svc4.jpg);
+  background-image: url(../material/images/pt_svc4.jpg);
 }
 @media (max-width: 768px) {
   #services .list-box {
@@ -771,7 +778,7 @@ section {
   z-index: 2;
   width: 65%;
   /* background-color: rgba(247, 221, 182, 0.436); */
-  background-color: rgba(145, 196, 230, 0.436);
+  background-color: rgba(175, 223, 255, 0.436);
   padding: 30px 50px;
   height: 100vh;
 }
@@ -786,7 +793,8 @@ section {
 }
 #about .contain .scrollbox::-webkit-scrollbar {
   width: 10px;
-  background: rgba(178, 219, 238, 0.2823529412);
+  background: var(--light-gb-5);
+  opacity: 0.2;
 }
 #about .contain .scrollbox::-webkit-scrollbar:horizontal {
   height: 10px;
@@ -794,10 +802,10 @@ section {
 #about .contain .scrollbox::-webkit-scrollbar-button {
   width: 10px;
   height: 10px;
-  background: rgba(3, 18, 151, 0.2117647059);
+  background: var(--dark-gb-5);
 }
 #about .contain .scrollbox::-webkit-scrollbar-thumb {
-  background: rgba(3, 18, 151, 0.2117647059);
+  background: var(--dark-gb-5);
 }
 #about .contain .scrollbox::-webkit-scrollbar-thumb.active {
   background: rgba(128, 74, 74, 0.5058823529);
@@ -899,32 +907,32 @@ section {
   font-family: TaipeiSansTC;
   font-size: 1rem;
   font-weight: 200;
-  color: rgba(149, 114, 114, 0.7058823529);
+  color: var(--grey);
 }
 #contact #contact_form input::-moz-placeholder, #contact #contact_form textarea::-moz-placeholder {
   font-family: TaipeiSansTC;
   font-size: 1rem;
   font-weight: 200;
-  color: rgba(149, 114, 114, 0.7058823529);
+  color: var(--grey);
 }
 #contact #contact_form input:-ms-input-placeholder, #contact #contact_form textarea:-ms-input-placeholder {
   font-family: TaipeiSansTC;
   font-size: 1rem;
   font-weight: 200;
-  color: rgba(149, 114, 114, 0.7058823529);
+  color: var(--grey);
 }
 #contact #contact_form input::-ms-input-placeholder, #contact #contact_form textarea::-ms-input-placeholder {
   font-family: TaipeiSansTC;
   font-size: 1rem;
   font-weight: 200;
-  color: rgba(149, 114, 114, 0.7058823529);
+  color: var(--grey);
 }
 #contact #contact_form input::placeholder,
 #contact #contact_form textarea::placeholder {
   font-family: TaipeiSansTC;
   font-size: 1rem;
   font-weight: 200;
-  color: rgba(149, 114, 114, 0.7058823529);
+  color: var(--grey);
 }
 #contact #contact_form input {
   /*恆定在固定角度，無論網頁放大*/
@@ -936,7 +944,7 @@ section {
 }
 #contact #contact_form input:focus,
 #contact #contact_form textarea:focus {
-  outline: 3px solid rgba(36, 110, 52, 0.9);
+  outline: 3px solid var(--dark-gb);
   /* outline-offset: 15px; */
   /* Foucus框與原框間距 */
 }
@@ -949,10 +957,11 @@ section {
   /* text-decoration: none; */
   /* border-radius: 30px; */
   border-radius: calc(infinity * 1px);
-  width: 210px;
+  color: var(--dark-gb);
+  width: 30%;
   cursor: pointer;
-  background-color: rgba(204, 214, 200, 0.8);
-  border: 2px solid rgba(53, 87, 40, 0.4);
+  background-color: var(--light-gb-5);
+  border: 2px solid var(--dark-gb-5);
   display: block;
   margin: 2vh auto;
   /*一定要是區塊(block)才能夠使用margin左右auto(置中)*/
@@ -1081,7 +1090,7 @@ footer {
   /* height: 50px; */
   /* line-height: 50px; */
   /*垂直置中常用行高設定跟高度一樣*/
-  background-color: var(--lesser-color);
+  background-color: var(--dark-gb);
   /* text-align: center; */
   color: var(--deep_grey);
   display: -webkit-box;
