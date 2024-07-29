@@ -57,7 +57,7 @@ $(document).ready(function () {
 
   // 當點擊縮略圖時，顯示 Lightbox 並設置圖片
   $(".lightbox-trigger").click(function () {
-    var src = $(this).attr("src");
+    var src = $(this).find("img").attr("src");
     $("#lightbox-image").attr("src", src);
     $("#lightbox").css("display", "flex").hide().fadeIn();
     $("body").addClass("no-scroll"); // 添加 no-scroll
@@ -81,9 +81,9 @@ $(document).ready(function () {
   // 當點擊縮略圖時，顯示 Lightbox 並設置圖片
   $(".lightbox-trigger2").click(function (event) {
     // 如果點擊的目標是<a>，則不處理<div>的點擊事件
-    if (["a", "p", "h3"].includes(event.target.tagName.toLowerCase())) {
-      return;
-    }
+    // if (["a", "p", "h3"].includes(event.target.tagName.toLowerCase())) {
+    //   return;
+    // }
     var bgImage = $(this).css("background-image");
     var src = bgImage.replace(/^url\(['"](.+)['"]\)/, "$1");
     $("#lightbox-image2").attr("src", src);

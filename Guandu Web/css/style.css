@@ -532,6 +532,7 @@ section {
   border-radius: 20px;
   overflow: hidden;
   height: 65vh;
+  cursor: pointer;
 }
 
 /* .list-item a {
@@ -625,7 +626,7 @@ section {
   /*瀏覽器有預設，可省略*/
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 4;
+  -webkit-line-clamp: 6;
 }
 #news a {
   /* display: inline-block; */
