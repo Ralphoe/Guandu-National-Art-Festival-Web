@@ -295,6 +295,7 @@ section {
 .lightbox,
 .lightbox2 {
   display: none;
+  flex-direction: column;
   position: fixed;
   top: 0;
   left: 0;
@@ -303,12 +304,15 @@ section {
   background: rgba(0, 0, 0, 0.8);
   justify-content: center;
   align-items: center;
+  padding: 2.5%;
+  padding-bottom: 3.5%;
   z-index: 1000;
   /* display: flex; */
   img {
     max-width: 90%;
     max-height: 80%;
     margin: auto;
+    margin-bottom: 2%;
     object-fit: contain;
   }
 }
@@ -316,20 +320,17 @@ section {
   cursor: pointer;
 }
 
-/* 文字燈箱 */
+.lightbox-content {
+  max-width: 90%;
+  max-height: 80%;
+  color: #ddd;
 
-.light_box {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.8);
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
+  font-family: "Grey Qo", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
 }
+
 
 /* lightbox開啟時，取消網頁滾軸 */
 .no-scroll {
@@ -552,34 +553,33 @@ section {
         background: var(--light-gb-5);
         opacity: 0.2;
       }
-    
+
       &::-webkit-scrollbar:horizontal {
         height: 10px;
       }
-    
+
       &::-webkit-scrollbar-button {
         width: 10px;
         height: 10px;
         background: var(--dark-gb-5);
       }
-    
+
       &::-webkit-scrollbar-thumb {
         background: var(--dark-gb-5);
-    
+
         &.active {
           background: #804a4a81;
         }
       }
-    
+
       &::-webkit-scrollbar-corner {
         background: #4f535f63;
       }
-    
+
       &::-webkit-scrollbar-track {
         box-shadow: inset 0 0 5px rgba(161, 168, 115, 0.2);
       }
     }
-    
   }
 
   video {
@@ -604,8 +604,6 @@ section {
     }
   }
 }
-
-
 
 /*VIDEO區塊*/
 

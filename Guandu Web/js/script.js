@@ -59,6 +59,8 @@ $(document).ready(function () {
   $(".lightbox-trigger").click(function () {
     var src = $(this).find("img").attr("src");
     $("#lightbox-image").attr("src", src);
+    var text = $(this).find("p").text();
+    $("#lightbox-content").text(text);
     $("#lightbox").css("display", "flex").hide().fadeIn();
     $("body").addClass("no-scroll"); // 添加 no-scroll
     $(".navigation").css("margin-right", "17px");
