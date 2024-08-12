@@ -564,14 +564,23 @@ section {
   z-index: 1000;
   /* display: flex; */
 }
-.lightbox img,
-.lightbox2 img {
+
+.lightbox img {
   max-width: 90%;
   max-height: 80%;
   margin: auto;
   margin-bottom: 2%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.lightbox2 img {
+  max-width: 90%;
+  max-height: 80%;
+  margin: auto;
+  margin-bottom: 2%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .thumbnail {

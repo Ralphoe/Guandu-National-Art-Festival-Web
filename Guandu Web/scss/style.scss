@@ -308,6 +308,9 @@ section {
   padding-bottom: 3.5%;
   z-index: 1000;
   /* display: flex; */
+}
+
+.lightbox {
   img {
     max-width: 90%;
     max-height: 80%;
@@ -316,6 +319,17 @@ section {
     object-fit: cover;
   }
 }
+
+.lightbox2 {
+  img {
+    max-width: 90%;
+    max-height: 80%;
+    margin: auto;
+    margin-bottom: 2%;
+    object-fit: contain;
+  }
+}
+
 .thumbnail {
   cursor: pointer;
 }
@@ -330,7 +344,6 @@ section {
   font-style: normal;
   font-size: 2rem;
 }
-
 
 /* lightbox開啟時，取消網頁滾軸 */
 .no-scroll {
