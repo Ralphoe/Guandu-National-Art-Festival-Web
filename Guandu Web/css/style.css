@@ -568,16 +568,6 @@ section {
           align-items: center;
 }
 
-.lightbox2 {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-}
-
 .lightbox img {
   max-width: 90%;
   max-height: 80%;
@@ -587,11 +577,21 @@ section {
      object-fit: cover;
 }
 
+.lightbox2 {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.lightbox2 .lightbox2-container {
+  max-width: 90%;
+  max-height: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 .lightbox2 img {
   max-width: 60%;
   max-height: 80%;
-  margin: auto;
-  margin-right: 0;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -613,7 +613,6 @@ section {
 .lightbox-content-service {
   max-width: 30%;
   max-height: 80%;
-  margin: auto 15% auto 5%;
   color: #ddd;
   font-family: "Grey Qo", cursive;
   font-weight: 400;
@@ -621,33 +620,6 @@ section {
   font-size: 2rem;
 }
 
-@media (max-width: 1024px) {
-  .lightbox2 img {
-    max-width: 60%;
-    margin-right: auto;
-    margin-left: auto;
-  }
-  .lightbox2 .lightbox-content-service {
-    margin-right: auto;
-    margin-left: auto;
-  }
-}
-@media (max-width: 768px) {
-  .lightbox2 {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .lightbox2 img {
-    max-width: 70%;
-    max-height: 60%;
-  }
-  .lightbox2 .lightbox-content-service {
-    font-size: 1.8rem;
-    max-width: 90%;
-  }
-}
 /* lightbox開啟時，取消網頁滾軸 */
 .no-scroll {
   overflow: hidden;

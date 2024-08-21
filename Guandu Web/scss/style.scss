@@ -313,11 +313,6 @@ section {
   align-items: center;
 }
 
-.lightbox2 {
-  flex-direction: row;
-  align-items: flex-start;
-}
-
 .lightbox {
   img {
     max-width: 90%;
@@ -329,11 +324,15 @@ section {
 }
 
 .lightbox2 {
+  align-items: center;
+  .lightbox2-container {
+    max-width: 90%;
+    max-height: 90%;
+    display: flex;
+  }
   img {
     max-width: 60%;
     max-height: 80%;
-    margin: auto;
-    margin-right: 0;
     object-fit: contain;
   }
 }
@@ -356,8 +355,6 @@ section {
 .lightbox-content-service {
   max-width: 30%;
   max-height: 80%;
-  margin: auto 15% auto 5%;
-
   color: #ddd;
 
   font-family: "Grey Qo", cursive;
@@ -366,33 +363,33 @@ section {
   font-size: 2rem;
 }
 
-@media (max-width: 1024px) {
-  .lightbox2 {
-    img{
-      max-width: 60%;
-      margin-right: auto;
-      margin-left: auto;
-    }
-    .lightbox-content-service {
-      margin-right: auto;
-      margin-left: auto;
-    }
-  }
-}
+// @media (max-width: 1024px) {
+//   .lightbox2 {
+//     img {
+//       max-width: 60%;
+//       margin-right: auto;
+//       margin-left: auto;
+//     }
+//     .lightbox-content-service {
+//       margin-right: auto;
+//       margin-left: auto;
+//     }
+//   }
+// }
 
-@media (max-width: 768px) {
-  .lightbox2 {
-    flex-direction: column;
-    img{
-      max-width: 70%;
-      max-height: 60%;
-    }
-    .lightbox-content-service {
-      font-size: 1.8rem;
-      max-width: 90%;
-    }
-  }
-}
+// @media (max-width: 768px) {
+//   .lightbox2 {
+//     flex-direction: column;
+//     img {
+//       max-width: 70%;
+//       max-height: 60%;
+//     }
+//     .lightbox-content-service {
+//       font-size: 1.8rem;
+//       max-width: 90%;
+//     }
+//   }
+// }
 
 /* lightbox開啟時，取消網頁滾軸 */
 .no-scroll {
