@@ -262,7 +262,7 @@ section {
   font-size: 2.5rem;
   color: var(--dark-gb);
   border-top: var(--dark-gb) solid 3px;
-  margin-bottom: 10px;
+  margin-bottom: 5%;
   padding: 5px;
   /* margin-top: 10px; */
 }
@@ -284,6 +284,17 @@ section {
   height: 65vh;
   // 整個article標籤都可以點擊
   cursor: pointer;
+}
+
+// ==HOVER==
+
+.list-box .list-item:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.list-box:hover > .list-item:not(:hover) {
+  filter: blur(10px);
+  // transform: scale(0.9, 0.9);
 }
 
 /* .list-item a {
@@ -317,23 +328,61 @@ section {
   img {
     max-width: 90%;
     max-height: 80%;
-    margin: auto;
     margin-bottom: 2%;
     object-fit: cover;
+  }
+}
+
+@media (max-width: 480px) {
+  .lightbox {
+    justify-content: flex-start;
+    img {
+      margin: 0;
+      margin-top: 30%;
+      margin-bottom: 10px;
+    }
   }
 }
 
 .lightbox2 {
   align-items: center;
   .lightbox2-container {
-    max-width: 90%;
+    max-width: 990px;
     max-height: 90%;
     display: flex;
-  }
-  img {
-    max-width: 60%;
-    max-height: 80%;
-    object-fit: contain;
+    background-color: var(--major-color2);
+    padding: 60px 60px;
+    border-radius: 20px;
+
+    .content-box {
+      max-width: 36%;
+      max-height: 80%;
+      margin-left: 2%;
+
+      .content-title {
+        font-family: "Grey Qo", cursive;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 3.5rem;
+        color: black;
+        margin-bottom: 2%;
+      }
+
+      .lightbox-content-service {
+        font-family: TaipeiSansTC, sans-serif;
+        line-height: 24px;
+        letter-spacing: 1px;
+        color: var(--deep_grey);
+        font-style: normal;
+        font-size: 1rem;
+      }
+    }
+
+    img {
+      max-width: 60%;
+      max-height: 80%;
+      object-fit: contain;
+    }
   }
 }
 
@@ -352,44 +401,37 @@ section {
   font-size: 2rem;
 }
 
-.lightbox-content-service {
-  max-width: 30%;
-  max-height: 80%;
-  color: #ddd;
-
-  font-family: "Grey Qo", cursive;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 2rem;
+@media (max-width: 1024px) {
+  .lightbox2 {
+    .content-box {
+      max-width: 50%;
+    }
+  }
 }
 
-// @media (max-width: 1024px) {
-//   .lightbox2 {
-//     img {
-//       max-width: 60%;
-//       margin-right: auto;
-//       margin-left: auto;
-//     }
-//     .lightbox-content-service {
-//       margin-right: auto;
-//       margin-left: auto;
-//     }
-//   }
-// }
+@media (max-width: 768px) {
+  .lightbox2 {
 
-// @media (max-width: 768px) {
-//   .lightbox2 {
-//     flex-direction: column;
-//     img {
-//       max-width: 70%;
-//       max-height: 60%;
-//     }
-//     .lightbox-content-service {
-//       font-size: 1.8rem;
-//       max-width: 90%;
-//     }
-//   }
-// }
+    .lightbox2-container {
+      flex-direction: column;
+      align-items: center;
+      img {
+        max-width: 30%;
+        margin-bottom: 2%;
+      }
+      .content-box {
+        max-width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .lightbox-content-service {
+          font-size: 0.8rem;
+        }
+      }
+    }
+
+  }
+}
 
 /* lightbox開啟時，取消網頁滾軸 */
 .no-scroll {

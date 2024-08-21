@@ -90,6 +90,8 @@ $(document).ready(function () {
     $(".navigation").css("margin-right", "17px");
     var text = $(this).find("p").first().text();
     $("#lightbox-content-service").text(text);
+    var title = $(this).find("h3").first().text();
+    $("#content-title").text(title);
   });
 
   // 當點擊 Lightbox 本身時，隱藏 Lightbox
