@@ -614,9 +614,11 @@ section {
   border-radius: 20px;
 }
 .lightbox2 .lightbox2-container .content-box {
+  position: relative;
   max-width: 36%;
   max-height: 80%;
   margin-left: 2%;
+  padding-left: 2%;
 }
 .lightbox2 .lightbox2-container .content-box .content-title {
   font-family: "Grey Qo", cursive;

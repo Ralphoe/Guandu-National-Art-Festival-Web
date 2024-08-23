@@ -355,9 +355,24 @@ section {
     border-radius: 20px;
 
     .content-box {
+      position: relative;
       max-width: 36%;
       max-height: 80%;
       margin-left: 2%;
+      padding-left: 2%;
+
+      // &::before {
+      //   content: "";
+      //   position: absolute;
+      //   left: -10%;
+      //   top: 50%;
+      //   transform: translateY(-50%);
+      //   bottom: 0;
+      //   width: 3px;
+      //   height: 90%;
+      //   opacity: 0.5;
+      //   background-color: var(--deep_grey);
+      // }
 
       .content-title {
         font-family: "Grey Qo", cursive;
@@ -411,7 +426,6 @@ section {
 
 @media (max-width: 768px) {
   .lightbox2 {
-
     .lightbox2-container {
       flex-direction: column;
       align-items: center;
@@ -429,7 +443,6 @@ section {
         }
       }
     }
-
   }
 }
 
