@@ -51,6 +51,33 @@ window.onscroll = function () {
   }
 };
 
+// 建立一個隱藏的div來計算滾動條寬度
+function getScrollbarWidth() {
+    // 創建一個div元素
+    const div = document.createElement('div');
+    
+    // 設置div的樣式
+    div.style.visibility = 'hidden';
+    div.style.overflow = 'scroll'; // 強制出現滾動條
+    div.style.msOverflowStyle = 'scrollbar'; // 為IE設置強制滾動條
+    div.style.position = 'absolute';
+    div.style.top = '-9999px';
+    
+    // 插入div到body中
+    document.body.appendChild(div);
+    
+    // 計算滾動條寬度
+    const scrollbarWidth = div.offsetWidth - div.clientWidth;
+    
+    // 移除div
+    document.body.removeChild(div);
+    
+    return scrollbarWidth;
+}
+
+// 取得滾動條寬度
+const scrollbarWidth = getScrollbarWidth();
+
 //light box
 $(document).ready(function () {
   var scrollPosition = 0;
@@ -63,7 +90,7 @@ $(document).ready(function () {
     $("#lightbox-content").text(text);
     $("#lightbox").css("display", "flex").hide().fadeIn();
     $("body").addClass("no-scroll"); // 添加 no-scroll
-    $(".navigation").css("margin-right", "17px");
+    $(".navigation").css("margin-right", scrollbarWidth + "px");
   });
 
   // 當點擊 Lightbox 本身時，隱藏 Lightbox
@@ -87,7 +114,7 @@ $(document).ready(function () {
     $("#lightbox-image2").attr("src", src);
     $("#lightbox2").css("display", "flex").hide().fadeIn();
     $("body").addClass("no-scroll"); // 添加 no-scroll
-    $(".navigation").css("margin-right", "17px");
+    $(".navigation").css("margin-right", scrollbarWidth + "px");
     var text = $(this).find("p").first().text();
     $("#lightbox-content-service").text(text);
     var title = $(this).find("h3").first().text();
@@ -101,18 +128,4 @@ $(document).ready(function () {
       $(".navigation").css("margin-right", "0");
     });
   });
-
-  // 設置 <a>、<p> 和 <h3> 的點擊事件
-  // $(".clickable-a").on("click", function (event) {
-  //   event.preventDefault(); // 阻止 <a> 的默認行為
-  //   alert("A clicked");
-  // });
-
-  // $("p").on("click", function (event) {
-  //   alert("P clicked");
-  // });
-
-  // $("h3").on("click", function (event) {
-  //   alert("H3 clicked");
-  // });
 });
