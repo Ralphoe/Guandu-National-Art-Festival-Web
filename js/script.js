@@ -90,6 +90,7 @@ $(document).ready(function () {
     $("#lightbox-content").text(text);
     $("#lightbox").css("display", "flex").hide().fadeIn();
     $("body").addClass("no-scroll"); // 添加 no-scroll
+    $("body").css("padding-right", scrollbarWidth + "px");
     $(".navigation").css("margin-right", scrollbarWidth + "px");
   });
 
@@ -97,6 +98,7 @@ $(document).ready(function () {
   $("#lightbox").click(function () {
     $(this).fadeOut(function () {
       $("body").removeClass("no-scroll");
+      $("body").css("padding-right", "0");
       $(".navigation").css("margin-right", "0");
     });
   });
@@ -114,6 +116,7 @@ $(document).ready(function () {
     $("#lightbox-image2").attr("src", src);
     $("#lightbox2").css("display", "flex").hide().fadeIn();
     $("body").addClass("no-scroll"); // 添加 no-scroll
+    $("body").css("padding-right", scrollbarWidth + "px");
     $(".navigation").css("margin-right", scrollbarWidth + "px");
     var text = $(this).find("p").first().text();
     $("#lightbox-content-service").text(text);
@@ -125,6 +128,7 @@ $(document).ready(function () {
   $("#lightbox2").click(function () {
     $(this).fadeOut(function () {
       $("body").removeClass("no-scroll");
+      $("body").css("padding-right", "0");
       $(".navigation").css("margin-right", "0");
     });
   });
