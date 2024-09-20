@@ -1,23 +1,13 @@
-// 完成loading
+// 完成loading page
 $(window).on("load", function () {
   // 所有圖片載入完成後執行
   $(".loading-container").fadeOut(500, function () {
     $(this).remove(); // 移除 .loading-container
   });
-
-  // 移除 body 的背景及其他樣式
-  $("body").css({
-    background: "",
-    "background-size": "",
-    "background-position": "",
-    "backdrop-filter": "",
-    "font-family": "",
-    display: "",
-    "flex-direction": "",
-    "justify-content": "",
-    "align-items": "",
-  });
+  // 移除 body 的滾動
+  $('body').removeClass('no-scroll');
 });
+
 
 $(document).ready(function () {
   //---漢堡按鈕---
