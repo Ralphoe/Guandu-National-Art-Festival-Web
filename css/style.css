@@ -181,10 +181,10 @@ button {
   /*輔助色調*/
   --lesser-color: rgb(191, 152, 153);
   --dark-gb: #22577a;
-  --dark-gb-5: #22577a1a;
+  --dark-gb-5: #22577a42;
   --miduim-gb: #38a3a5;
   --light-gb: #57cc99;
-  --light-gb-5: #57cc9918;
+  --light-gb-5: #57cc993b;
   --green: #80ed99;
   --light-g: #c7f9cc;
 }
@@ -533,6 +533,8 @@ section {
   overflow: hidden;
   height: 65vh;
   cursor: pointer;
+  -webkit-transition: 0.35s !important;
+  transition: 0.35s !important;
 }
 
 .list-box .list-item:hover {
@@ -541,8 +543,8 @@ section {
 }
 
 .list-box:hover > .list-item:not(:hover) {
-  -webkit-filter: blur(10px);
-          filter: blur(10px);
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
 }
 
 /* .list-item a {
@@ -1064,7 +1066,7 @@ section {
   color: var(--dark-gb);
   width: 30%;
   cursor: pointer;
-  background-color: var(--light-gb-5);
+  background-color: rgba(214, 214, 214, 0.5058823529);
   border: 2px solid var(--dark-gb-5);
   display: block;
   margin: 2vh auto;
@@ -1076,7 +1078,7 @@ section {
 }
 #contact #btn_form span {
   display: block;
-  font-size: 0.8rem;
+  font-size: 1rem;
   /*12px;*/
   font-family: "Noto Serif TC", serif;
   font-weight: 700;
@@ -1286,8 +1288,8 @@ footer .icon a {
   width: 35px;
   height: 35px;
   margin: 5px;
-  -webkit-transition: all 1s;
-  transition: all 1s;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
 }
 
 /*置頂按鈕*/

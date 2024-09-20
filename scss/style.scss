@@ -284,6 +284,7 @@ section {
   height: 65vh;
   // 整個article標籤都可以點擊
   cursor: pointer;
+  transition: .35s!important; 
 }
 
 // ==HOVER==
@@ -293,7 +294,7 @@ section {
 }
 
 .list-box:hover > .list-item:not(:hover) {
-  filter: blur(10px);
+  filter: blur(5px);
   // transform: scale(0.9, 0.9);
 }
 
@@ -839,7 +840,7 @@ section {
     width: 30%;
 
     cursor: pointer;
-    background-color: var(--light-gb-5);
+    background-color: #d6d6d681;
     border: 2px solid var(--dark-gb-5);
 
     display: block;
@@ -853,7 +854,7 @@ section {
 
     span {
       display: block;
-      font-size: 0.8rem;
+      font-size: 1rem;
       /*12px;*/
       font-family: "Noto Serif TC", serif;
       font-weight: 700;
@@ -1007,7 +1008,7 @@ footer {
       height: 35px;
       margin: 5px;
 
-      transition: all 1s;
+      transition: all .35s;
     }
   }
 }
