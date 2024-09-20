@@ -1,12 +1,12 @@
 // 完成loading page
-// $(window).on("load", function () {
-//   // 所有圖片載入完成後執行
-//   $(".loading-container").fadeOut(500, function () {
-//     $(this).remove(); // 移除 .loading-container
-//   });
-//   // 移除 body 的滾動
-//   $('body').removeClass('no-scroll');
-// });
+$(window).on("load", function () {
+  // 所有圖片載入完成後執行
+  $(".loading-container").fadeOut(500, function () {
+    $(this).remove(); // 移除 .loading-container
+  });
+  // 移除 body 的滾動
+  $('body').removeClass('no-scroll');
+});
 
 
 $(document).ready(function () {
