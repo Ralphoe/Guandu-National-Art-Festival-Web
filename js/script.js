@@ -12,6 +12,10 @@ $(window).on("load", function () {
     "background-position": "",
     "backdrop-filter": "",
     "font-family": "",
+    display: "",
+    "flex-direction": "",
+    "justify-content": "",
+    "align-items": "",
   });
 });
 

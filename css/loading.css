@@ -7,13 +7,26 @@ html {
 }
 
 body {
-  background: url("./pics/loading_background.jpg");
+  background: url("../material/images/loading_background.jpg");
   /* https://farm9.staticflickr.com/8760/17195790401_ceeeafcddb_o.jpg */
   background-size: cover;
   background-position: center;
   -webkit-backdrop-filter: blur(12px) brightness(60%) contrast(70%) grayscale(60%);
           backdrop-filter: blur(12px) brightness(60%) contrast(70%) grayscale(60%);
   font-family: "Cabin Condensed", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 body .loading-container {
   display: -webkit-box;

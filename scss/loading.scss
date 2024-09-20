@@ -5,12 +5,16 @@ html {
   height: 100%;
 }
 body {
-  background: url("./pics/loading_background.jpg");
+  background: url("../material/images/loading_background.jpg");
   /* https://farm9.staticflickr.com/8760/17195790401_ceeeafcddb_o.jpg */
   background-size: cover;
   background-position: center;
   backdrop-filter: blur(12px) brightness(60%) contrast(70%) grayscale(60%);
   font-family: "Cabin Condensed", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   .loading-container {
     display: flex;
@@ -24,7 +28,7 @@ body {
     left: 0;
     z-index: 1000; /* 確保在最上層 */
   }
-
+  
   svg {
     font-weight: bold;
     max-width: 600px;
