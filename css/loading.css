@@ -1,0 +1,40 @@
+@charset "UTF-8";
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  background: url("./pics/loading_background.jpg");
+  /* https://farm9.staticflickr.com/8760/17195790401_ceeeafcddb_o.jpg */
+  background-size: cover;
+  background-position: center;
+  -webkit-backdrop-filter: blur(12px) brightness(60%) contrast(70%) grayscale(60%);
+          backdrop-filter: blur(12px) brightness(60%) contrast(70%) grayscale(60%);
+  font-family: "Cabin Condensed", sans-serif;
+}
+body .loading-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw; /* 滿版寬度 */
+  height: 100vh; /* 滿版高度 */
+  /* background-color: white;  */
+  position: fixed; /* 固定在視窗中央 */
+  top: 0;
+  left: 0;
+  z-index: 1000; /* 確保在最上層 */
+}
+body svg {
+  font-weight: bold;
+  max-width: 600px;
+  height: auto;
+}/*# sourceMappingURL=loading.css.map */

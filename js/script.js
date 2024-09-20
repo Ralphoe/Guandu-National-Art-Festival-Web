@@ -1,3 +1,20 @@
+// 完成loading
+$(window).on("load", function () {
+  // 所有圖片載入完成後執行
+  $(".loading-container").fadeOut(500, function () {
+    $(this).remove(); // 移除 .loading-container
+  });
+
+  // 移除 body 的背景及其他樣式
+  $("body").css({
+    background: "",
+    "background-size": "",
+    "background-position": "",
+    "backdrop-filter": "",
+    "font-family": "",
+  });
+});
+
 $(document).ready(function () {
   //---漢堡按鈕---
   $(".hamburger").click(function () {
@@ -53,26 +70,26 @@ window.onscroll = function () {
 
 // 建立一個隱藏的div來計算滾動條寬度
 function getScrollbarWidth() {
-    // 創建一個div元素
-    const div = document.createElement('div');
-    
-    // 設置div的樣式
-    div.style.visibility = 'hidden';
-    div.style.overflow = 'scroll'; // 強制出現滾動條
-    div.style.msOverflowStyle = 'scrollbar'; // 為IE設置強制滾動條
-    div.style.position = 'absolute';
-    div.style.top = '-9999px';
-    
-    // 插入div到body中
-    document.body.appendChild(div);
-    
-    // 計算滾動條寬度
-    const scrollbarWidth = div.offsetWidth - div.clientWidth;
-    
-    // 移除div
-    document.body.removeChild(div);
-    
-    return scrollbarWidth;
+  // 創建一個div元素
+  const div = document.createElement("div");
+
+  // 設置div的樣式
+  div.style.visibility = "hidden";
+  div.style.overflow = "scroll"; // 強制出現滾動條
+  div.style.msOverflowStyle = "scrollbar"; // 為IE設置強制滾動條
+  div.style.position = "absolute";
+  div.style.top = "-9999px";
+
+  // 插入div到body中
+  document.body.appendChild(div);
+
+  // 計算滾動條寬度
+  const scrollbarWidth = div.offsetWidth - div.clientWidth;
+
+  // 移除div
+  document.body.removeChild(div);
+
+  return scrollbarWidth;
 }
 
 // 取得滾動條寬度
