@@ -21,4 +21,30 @@ svg {
   font-weight: bold;
   max-width: 600px;
   height: auto;
+}
+
+@-webkit-keyframes move {
+  from {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(40px);
+            transform: translateX(40px);
+  }
+}
+
+@keyframes move {
+  from {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(40px);
+            transform: translateX(40px);
+  }
+}
+#wavePath {
+  -webkit-animation: move 1.5s infinite linear;
+          animation: move 1.5s infinite linear;
 }/*# sourceMappingURL=loading.css.map */
